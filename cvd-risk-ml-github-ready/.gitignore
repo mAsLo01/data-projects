@@ -1,0 +1,35 @@
+# Python and development
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Secrets
+kaggle.json
+.env
+.env.*
+*.key
+
+# Raw dataset and model binaries
+data/raw/*
+!data/raw/.gitkeep
+artifacts/models/*
+!artifacts/models/.gitkeep
+*.joblib
+
+# Reproducible experiments are published separately in results/
+artifacts/reports/*.csv
+artifacts/reports/*.json
+artifacts/reports/figures/*
+!artifacts/reports/figures/.gitkeep
+predictions.csv
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
